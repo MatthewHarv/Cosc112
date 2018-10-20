@@ -1,0 +1,62 @@
+/*Matthew Harvey Lab 10*/
+
+
+/* Sets the colour of the background */
+html{
+    background-color: #ebfff9;
+    color:inherit;
+}
+
+/* Set the colour of the content */
+body{
+    background-color: inherit;
+	color:#4ca68d;	
+	width:700px;
+	margin:0px auto;
+}
+
+/* Creates the colour and dimensions of the article */
+h2+ div{
+	
+	background-color:#fff9eb;
+	color:inherit;
+	padding: 20px 15px 20px 15px;
+}
+/* Sets and aligns the header "recipe" in the correct position */
+h1{	
+    text-align:center;
+
+}
+
+h2, h3, ul, p{
+	margin:0;
+}
+
+/* Sets the position of the two paragraphs at the bottom. */
+p{
+	clear:left;
+	text-align:justify;
+	padding-top:20px;
+}
+
+/* Creates the border and position of the picture */
+img{
+	 border: 1px solid black;
+}
+
+/* The positions of the columns are defined and bullet points aligned */
+#column2{
+	 border-right: solid #000000 1px;
+	margin-right:20px;
+}
+
+
+/* Floats the columns left and defines its percentage of space taken */
+div>div, section{
+	width:31%;
+	float:left;
+
+}
+
+
+

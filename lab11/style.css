@@ -1,0 +1,78 @@
+
+html{
+	background-color: rgb(102, 153, 255);
+	color:inherit;
+}
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+	 color:black;
+	 background-color:inherit;
+}
+ul{
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+}
+img{
+	float:left;
+	padding-top:100px;
+	padding-bottom:100px;
+	background-color:black;
+	color:inherit;
+}
+form {
+    width: 450px;
+	float:left;
+	background-color:#4da6ff;
+	padding:10px;
+	margin-bottom:5px;
+	color:inherit;
+}
+.textInputs label{
+	float:left;
+	width:150px;
+
+}
+
+.textInputs input{
+	float:left;
+	width:230px;
+	margin-bottom:1px;
+}
+.textInputs li{
+	clear:both;
+	margin-bottom:5px;
+}
+
+li{
+		line-height: 1.5em;
+}
+.clear{
+clear:left;
+}
+fieldset{
+	margin-bottom:5px;
+	background-color:#99ccff;
+	color:inherit;
+}
+legend{
+	background-color: #cccccc;
+	padding:3px;
+	border: 1px solid;
+	color:inherit;
+}
+
+
+.radiocheckInputs li{
+float:left;
+margin-left:60px;
+}
+
+.submitInputs input{
+float:right;
+margin-left:5px;
+ border: 1px solid;
+  border-radius: 25px;
+}
+

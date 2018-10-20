@@ -1,0 +1,31 @@
+/* Matthew Harvey, March 2017. Style sheet for activity 5 */
+html{
+	color:black;
+	background-color:#f2f2ff;
+	font-family:Geneva,Helvetica,sans-serif;
+}
+
+h1{
+	font-size:x-large;
+	color:#ff0000; 
+	background-color: inherit;
+	font-style: italic;
+	text-align:center;
+
+}
+
+h2{
+	font-size:large;
+	color:#4d4da6;
+	background-color: inherit;
+	text-decoration:underline;
+
+}
+
+p{
+	text-indent: 5em;
+	font-size:medium;
+	color:#4d4da6;
+	background-color:#f2f2ff;
+
+}

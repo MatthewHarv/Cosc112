@@ -1,0 +1,246 @@
+/* Style sheet for TiddlyWinks Club by Matthew Harvey 6083573 */
+/* Sets the font/background/horizontal minimum width of the body */
+body {
+	color:black;
+    background-color: rgb(102, 153, 255);
+	overflow-y: scroll;
+	font-family: "Times New Roman", Times, serif;
+	 min-width:880px;
+}
+/* Sets the font and style of the header */
+h1{
+	font-size: 36px;
+	background-color: #80ccff; 
+	color: black;
+	margin: auto;
+	text-align: center;
+	
+	padding:5px 15px 5px 15px;
+	border-style: solid;
+    border-width: 2px;
+	
+}
+/* Centers the buttons */
+
+nav{
+	text-align: center;
+	margin-right:40px;
+}
+/* Sets the style and colour of the navigation buttons */
+nav li {
+	background-color: rgb(26, 178, 255);
+	color: white;
+	border-color:black;
+	border-radius: 15px;
+	padding: 10px 0px 10px 0px;
+	display: inline;
+	  font-weight: bold;
+	  border-style: solid;
+    border-width: 2px;
+	margin-left:10px;
+
+}
+/* Used to increase the size of the buttons and make it easier to click */
+nav a{
+	padding:20px;
+}
+
+/* Takes away the underline link of the buttons */
+a:link{
+    text-decoration: none;
+}
+/* Clears the left float */
+.clear{
+	clear:left;
+}
+/* The main content of the page controlling the border and width */
+#content{
+	width:80%;
+	background-color: rgb(153, 187, 255);
+	margin:auto;
+	padding:15px;
+	border-style: solid;
+    border-width: 5px;
+  color: inherit;
+
+}
+/* Sets font and height of the main paragraphs */
+p{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+}
+/* Seperates paragraphs with given length */
+p+p{
+margin-top:20px;
+}
+/* Seperates paragraph/header with given length */
+p+h2{
+margin-top:30px;
+}
+/* Seperates list/header with given length */
+h3+ul{
+margin-top:20px;
+margin-bottom:20px;
+}
+
+
+/* Sets the border and position of the image */
+img{
+border-style:solid;
+border-width:2px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+/* Sets font/position of header 2 */
+h2{
+font-size: 24px;
+text-align: center;
+}
+/* Sets font of header 3 */
+h3{
+font-size:18px;
+}
+/* Sets font of header 4 */
+h4{
+font-size:16px;
+}
+
+/* Sets the font and position of span */
+span{
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+	font-style:italic;
+}
+
+
+/* Sets table border and width to fill the page */
+table{
+    width:100%;
+	border-color:black;
+	border-style: solid;
+    border-width: 2px;
+	margin-bottom:20px;
+}
+
+/* closes the gaps in the table */
+table, th, td {
+    border-collapse: collapse; 
+}
+/* sets size of the table and its contents */
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+/* sets table colour to help the user read the data*/
+table tr:nth-child(even) {
+	color: inherit; 
+    background-color: #00cfd6;
+}
+/* sets table colour to help the user read the data*/
+table tr:nth-child(odd) {
+	color: inherit;
+	background-color: #2bbec4;
+}
+/* sets table title color*/
+table th{
+    background-color: #1d9b54;
+    color: #ffffff;
+	
+}
+/* Changes the pointer to show the table can be clicked*/
+.set_event:hover{
+    cursor: pointer;
+}
+/* Positions and sets description list fonts */
+dt{
+ font-weight: bold;
+}
+dd{
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+
+/* Form layout. Centers and spaces out the labels*/
+.textInputs label{
+    width: 100px;
+	  display: block;
+	  margin-left:auto;
+margin-right:auto;
+	  
+}
+/* Form layout. Centers and spaces out the inputs*/
+.textInputs input{
+	  display: block;
+ text-align: center;
+    width: 550px;
+	margin-left:auto;
+margin-right:auto;
+padding-bottom:2px;
+}
+/* Spreads the input form out */
+.textInputs li{
+    padding-bottom:10px;
+
+}
+/* Sets the style and font of the form title */
+.textInputs legend{
+	background-color: #25d1ae;
+	padding:3px;
+	border: 2px solid;
+	color:inherit;
+	font-weight: bold;
+	font-size:18px;
+}
+
+/* removes bullet points */
+ul {
+  list-style-type: none;
+}
+/* Sets the position and colour of the buttoms of the form */
+#formControls input{
+		background-color: #49a2ff;
+color:white;
+	border-radius: 15px;
+	display: inline;
+	  font-weight: bold;
+	  border-color:black;
+	  border-style: solid;
+    border-width: 2px;
+	padding:5px 15px 5px 15px;
+	cursor: pointer;
+
+
+
+}
+
+
+/* Sets back ground and colour of the fourm */
+fieldset{
+	 border-color:black;
+	border-style: solid;
+    border-width: 2px;
+	margin-bottom:5px;
+	background-color:#99ccff;
+	color:inherit;
+	text-align:center;
+}
+
+
+
+/* Used to hide the form header for the submit/reset buttons */
+.invisible{
+	display:none;
+}
+
+/* Sets style and position of the footer */
+footer{
+	margin-top:80px;
+	 font-style: italic;
+	text-align:center;
+}
+

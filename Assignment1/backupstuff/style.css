@@ -1,0 +1,33 @@
+/* Matthew Harvey, March 2017. Style sheet for activity 5 */
+
+
+
+body{
+	color:#000000;
+	background-color: #c0c0c0;
+}
+
+h1{
+	
+	text-align: center;
+	margin: auto;
+	border-style: dotted;
+	border-width: 15px;
+	width: 50%;
+	color:#000000;
+	background-color:#800000;
+}
+
+h2{
+	width: 50%;
+	color:#000000;
+	background-color: #f00;
+}
+
+figure{	 
+	text-align: center;
+}
+
+img {
+	border: 10px solid red;
+	}

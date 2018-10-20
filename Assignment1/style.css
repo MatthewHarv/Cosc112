@@ -1,0 +1,84 @@
+/* Matthew Harvey, March 2017, Style Sheet for index.html */
+body {
+	color: black;
+	background-color: #FFe4C4; 
+}
+
+h1 {
+	font-size: x-large;
+	background-color: #DEb887; 
+	color: black;
+	width: 50%;
+	margin: auto;
+	padding: 30px;
+	outline-color: #5F9EA0; 
+	outline-style: dotted;
+	text-align: center;
+	
+}
+
+h2 {
+	background-color: #FFF8DC;
+	color: inherit;
+	margin-right: 50px;
+	margin-top: 80px;
+	width: 300px;
+	padding: 5px;
+	text-align: left;
+	border-radius: 25px;
+
+}
+
+figure {
+	width: 100px;
+	margin: auto;
+	border: 1px solid black;
+}
+
+p{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+table, th, td {
+	border: 1px solid red;
+	border-collapse: collapse;
+	empty-cells: hide;
+	
+}
+
+th, td{
+	padding: 5px;
+	text-align: center;
+	
+}
+
+th { 
+	background-color: #BdB76B; 
+		color: #c71585; 
+	}
+
+td { 
+	
+	background-color:#20b2AA; 
+	color: #000000;
+		}
+		
+
+nav li {
+	background-color:  #AdFF2f;
+	color: black;
+	border-radius: 10px;
+	float: left;
+	padding: 10px;
+	display: inline;
+	margin-left: 10px;
+	margin-bottom:10px;
+}
+
+
+
+	
+	

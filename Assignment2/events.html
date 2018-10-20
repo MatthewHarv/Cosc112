@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<!--events.html markup by Matthew Harvey 6083573-->
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="tiddlyScript.js"></script>
+		<title>Tiddlywinks Club Events</title>
+	</head>
+	<body>
+		<div id="content">
+<!--Header Title-->	
+				<h1>The University of Otago Tiddlywinks Club</h1>
+<!--Navigation-->
+			<nav>
+				<ul >
+					<li><a href="index.html">Home</a></li>
+					<li><a href="how_to_play.html">How To Play</a></li>
+					<li><a>Events</a></li>
+					<li><a href="club_ranking.html">Club Rankings</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+		</nav>
+<!--Main content of the page-->			
+			<h2 class="clear">Events Timetable</h2>
+<!--Creates a table which uses javascript to fill the form out with onclick-->
+            <table>
+                <tr>
+                    <th colspan="3">Weekly Games</th>
+                </tr>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Location</th>
+                </tr>
+
+<!--Although only tuesday and friday are being used, other dates can be implemented in the future if nessessary -->     
+                 <tr>        
+                    <td id="mogame_date">Monday</td>
+                    <td id="mogame_time">-</td>
+                    <td id="mogame_room">-</td>
+                </tr>
+				
+                <tr class="set_event" onclick="tuesday()">
+                    <td id="tugame_date">Tuesday</td>
+                    <td id="tugame_time">7:00pm</td>
+                    <td id="tugame_room">Clubs and Socs room 2.14</td>
+                </tr>
+                <tr>
+                    <td id="wegame_date">Wednesday</td>
+                    <td id="wegame_time">-</td>
+                    <td id="wegame_room">-</td>
+                </tr>
+                <tr>
+                    <td id="thgame_date">Thursday</td>
+                    <td id="thgame_time">-</td>
+                    <td id="thgame_room">-</td>
+                </tr>
+                <tr class="set_event" onclick="friday()">
+                    <td id="fgame_date">Friday</td>
+                    <td id="fgame_time">8:00pm</td>
+                    <td id="fgame_room">Cavern Tavern</td>
+                </tr>
+                <tr>
+                     <td id="sagame_date">Saturday</td>
+                    <td id="sagame_time">-</td>
+                    <td id="sagame_room">-</td>
+                </tr>
+                <tr>
+                    <td id="sugame_date">Sunday</td>
+                    <td id="sugame_time">-</td>
+                    <td id="sugame_room">-</td>
+                </tr>
+            </table>
+			<!--The tornament timetable which also uses java script-->
+			<table>
+                <tr>
+                    <th colspan="2">Tournament Games</th>
+                </tr>
+                <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Name</th>
+                </tr>
+				<tr class="set_event" onclick="tour1()">
+                    <td id="tour1game_date">May 9th-10th</td>
+                    <td id="tour1game_name">University of Canterbury vs University of Otago</td>
+                </tr>
+				<tr class="set_event" onclick="tour2()">
+                    <td id="tour2game_date">July 25th-26th</td>
+                    <td id="tour2game_name">Lincoln College vs University of Otago</td>
+                </tr>
+            </table>
+					
+			  <p><span>Click on an event to enter it in the form below</span></p>
+
+<!--Creates a form that will be sent to the owners email address with the help of a script-->
+            <form id="join_us" method="get" enctype="application/x-www-form-urlencoded" action="http://web112.otago.ac.nz/112bin/112formslab.cgi">
+                <input type="hidden" name="recipient" value="harma440@student.otago.ac.nz">
+                <input type="hidden" name="subject" value="Tiddlywinks application form">
+                <input type="hidden" name="followup-page" value="http://www.csnet.otago.ac.nz/mharvey/assignment/followup.html">
+                <fieldset class="textInputs">
+                    <legend>Join any of our events</legend>
+ <!--Will take the users/javascript input to fill out the form-->    
+                    <ul>
+                        <li>
+                            <label for="firstname">Firstname</label>
+                            <input tabindex="0" type="text" name="firstname" id="firstname" title="First and middle name" required pattern="[a-z A-Z]+" placeholder="Please enter first name">
+                        </li>
+                        <li>
+                            <label for="surname">Surname</label>
+                            <input tabindex="0" type="text" name="lastname" id="surname" title="Last name" required pattern="[a-z A-Z]+" placeholder="Please enter last name">
+                        </li>
+                        <li>
+                            <label for="sender">Email address</label>
+                            <input tabindex="0" type="text" name="sender" id="sender" title="yourname@example.com" required pattern="^[a-z 0-9]+@[a-z 0-9]+\.[a-z]{2,4}" placeholder="example@example.com">
+                        </li>
+                        <li>
+                            <label for="phone">Phone number</label>
+                            <input tabindex="0" type="tel" name="phonenumber" id="phone" title="Contact number" required pattern="[0-9 -()]+" placeholder="(64) 123456789">
+                        </li>
+                        <li>
+                            <label for="game_day_input">Join event</label>
+                            <input tabindex="0" type="text" name="joinedgame" id="game_day_input" title="Join a game" placeholder="Click or enter event" required>
+                        </li>
+                    </ul>
+					</fieldset>
+<!--This will allow the user to send or reset the form. The reset has an onclick which is nessessary for the javascript table to function again-->
+            <fieldset id="formControls">
+                <legend class="invisible">Form Buttons</legend>
+                <input type="reset" value="Clear Form" onclick="resetexec()">
+                <input type="submit" value="Submit Form">
+            </fieldset>
+			
+                
+            </form>
+<!--Footer for information about the creator and website-->	
+			<footer>
+        <p>This website was created for a University project. The content is largely fictional and no services are actually being offered.</p>
+        <p>Last Edited on 15/5/17 by Matthew Harvey 6083573</p>
+    </footer>
+		</div>
+	</body>
+</html>
